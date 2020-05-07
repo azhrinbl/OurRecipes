@@ -1,0 +1,93 @@
+[
+    {
+        "nutrition":"Calories",
+        "k1": "297kcal",
+        "k2": "406kcal",
+        "k3": "214kcal",
+        "k4": "332kcal"
+    },
+    {
+        "nutrition":"Carbohydrates",
+        "k1" : "3g",
+        "k2": "57g",
+        "k3": "9g",
+        "k4": "11g"
+    },
+    {
+        "nutrition":"Protein",
+        "k1" : "36g",
+        "k2": "12g",
+        "k3": "17g",
+        "k4": "12g"
+    },
+	{
+        "nutrition":"Fat",
+        "k1" : "15g",
+        "k2": "15g",
+        "k3": "13g",
+        "k4": "30g"
+    },
+	{
+        "nutrition":"Saturated Fat",
+        "k1" : "2g",
+        "k2": "4g",
+        "k3": "6g",
+        "k4": "15g"
+    },
+    {
+        "nutrition":"Sodium",
+        "k1" : "153mg",
+        "k2": "870mg",
+        "k3": "420mg",
+        "k4": "66mg"
+    },
+    {
+        "nutrition":"Pottasium",
+        "k1" : "646mg",
+        "k2": "882mg",
+        "k3": "660mg",
+        "k4": "314mg"
+    },
+	{
+        "nutrition":"Fiber",
+        "k1" : "4g",
+        "k2": "8g",
+        "k3": "3g",
+        "k4": "6g"
+    },
+	{
+        "nutrition":"Sugar",
+        "k1" : "11g",
+        "k2": "8g",
+        "k3": "5g",
+        "k4": "1g"
+    },
+    {
+        "nutrition":"Vitamin A",
+        "k1" : "50IU",
+        "k2": "1834IU",
+        "k3": "1074IU",
+        "k4": "238IU"
+    },
+    {
+        "nutrition":"Vitamin C",
+        "k1" : "7mg",
+        "k2": "48mg",
+        "k3": "49mg",
+        "k4": "0mg"
+    },
+	{
+        "nutrition":"Calcium",
+        "k1" : "84mg",
+        "k2": "134mg",
+        "k3": "142mg",
+        "k4": "125mg"
+    },
+	{
+        "nutrition":"Iron",
+        "k1" : "1mg",
+        "k2": "4mg",
+        "k3": "2mg",
+        "k4": "3mg"
+    }
+]

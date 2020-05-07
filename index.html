@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Recipes</title>
+        
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/StyleSheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+             <!-- NAVBAR -->
+            <div class="navbar-wrapper">
+                <div class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" style="color:#177274 ; font-weight: bold; " href="index.html">OurRecipes</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meal type<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="breakfast.html">Breakfast</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="lunch.html">Lunch</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="dinner.html">Dinner</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="dessert.html">Dessert</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="nutrition.html">Nutrition</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="share.html">Share with Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="img/slide1.jpeg" alt="First slide"/>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Dessert</h1>
+                                <p><a class="btn btn-large btn-primary" href="dessert.html">Check the menu</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/slide2.jpeg" alt="Second slide"/>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Lunch</h1>
+                                <p><a class="btn btn-large btn-primary" href="lunch.html">Check the menu</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <img src="img/slide3.jpeg" alt="Third slide"/>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Lemon Garlic Baked Chicken Breast</h1>
+                                <p><a class="btn btn-large btn-primary" href="chicken.html">Check the recipes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <!-- /.carousel -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+            <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img alt="banana" src="img/breakfast1.jpeg" class="img-square" width="200px" height="200px"/>
+                        <h2>Breakfast</h2>
+                        <p><a class="btn btn-default" style="color: #177274" href="breakfast.html">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    
+                    <div class="col-lg-4">
+                        <img alt="lunch" src="img/lunch1.jpeg" class="img-square" width="200px" height="200px"/>
+                        <h2>Lunch</h2>
+                        <p><a class="btn btn-default" style="color: #177274" href="lunch.html">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+        
+                    <div class="col-lg-4">
+                        <img alt="dinner" src="img/dinner1.jpeg" class="img-square" width="200px" height="200px"/>
+                        <h2>Dinner</h2>
+                        <p><a class="btn btn-default" style="color: #177274" href="dinner.html">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+                <div id="abt">
+                    <div class="panel-body" text-align="center">
+                        <h3>Share with Us</h3>
+                        Want to share your own recipes? Click the button below. <p>
+                        <a class="btn btn-default" style="color: #177274" href="share.html">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center" style="color: #E88801;">
+                        <p class="pull-right"><a style="color:#E88801" href="#">Back to top</a></p>
+                        <p>&copy; 2014 OurRecipes, Inc. &middot; <a style="color:#E88801" href="#">Privacy</a>&middot; <a style="color:#E88801" href="#">Terms</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

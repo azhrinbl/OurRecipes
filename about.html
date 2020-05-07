@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Recipes</title>
+        
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/StyleSheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- NAVBAR -->
+           <div class="navbar-wrapper">
+            <div class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" style="color:#177274 ; font-weight: bold; " href="index.html">OurRecipes</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meal type<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="breakfast.html">Breakfast</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="lunch.html">Lunch</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="dinner.html">Dinner</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="dessert.html">Dessert</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nutrition.html">Nutrition</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="share.html">Share with Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <div class="home_container d-flex flex-column align-items-center justify-content-end">
+                    <div class="home_content text-center">
+                        <div class="home_title">About Us</div>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Welcome to OurRecipes!</h1>
+                        <br></br>
+                        <p>
+                        OurRecipes is a healthy food recipe site that has complete information on everything about diet and healthy food. Starting from the recipe to the nutrients contained in each food.
+                        We try to present steps that are easy to understand and practical, to help your work in the kitchen. Suitable for beginners who need a diet and healthy food reference.
+                        </p>
+                        <br></br>
+                        <h3 style="border:2px #E88801;">Share with Us</h3>
+                        Want to share your own recipes? Click the button below. <p>
+                        <a class="btn btn-default" href="share.html">View details &raquo;</a></p>
+                        <br></br>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Address:
+                            <br></br>
+                            CEP CCIT FTUI
+                            Gedung  Engineering Center Lt.1
+                            Jalan Prof. DR. Ir R. Roosseno, Kukusan, Beji, Depok
+                            15425
+                        </p>
+                        <!--Disini akan ditambahkan peta-->
+                        <div id="map" style="width: 100%; height: 500px;"></div>
+                        <br></br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center" style="color: #E88801;">
+                        <p class="pull-right"><a style="color:#E88801" href="#">Back to top</a></p>
+                        <p>&copy; 2014 OurRecipes, Inc. &middot; <a style="color:#E88801" href="#">Privacy</a>&middot; <a style="color:#E88801" href="#">Terms</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            //koordinat dan zoom view peta
+            //koordinat yang digunakan berupa latitude dan longitude
+            //sebagai contoh saya menggunakan koordinat CCIT
+            var map = L.map('map').setView([-6.362141, 106.824923], 17);
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                subdomains: ['a' , 'b', 'c'],
+            }).addTo(map);
+            //ini adalah koordinat marker
+            L.marker([-6.362141, 106.824923]).addTo(map)
+            .bindPopup("<b>Selamat Datang!</b> Di OurRecipes.").openPopup();
+            var popup = L.popup();
+            function onMapClick(e){
+                popup
+                .setLatLng(e.latlng)
+                .setContent("Koordinat pada titik ini adalah " + e.latlng.toString())
+                .openOn(map);
+            }
+            map.on('click', onMapClick);
+        </script>
+    </body>
+</html>
